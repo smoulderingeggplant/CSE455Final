@@ -4,9 +4,9 @@ import numpy as np
 
 eps = 10e-2
 
-def extract_frames_and_optical_flow(video_path, output_folder):
+def extract_frames_and_optical_flow(output_folder):
     # Open the video file
-    video = cv2.VideoCapture(video_path)
+    video = cv2.VideoCapture(0)
     # Create a folder to save the frames and optical flow images
     os.makedirs(output_folder, exist_ok=True)
     # Create a CSV file path within the output folder
@@ -38,14 +38,14 @@ def extract_frames_and_optical_flow(video_path, output_folder):
                 flow_image_path = os.path.join(output_folder, f"optical_flow_{frame_count:04d}.png")
                 flow_vis = draw_flow(frame_gray, flow)
                 cv2.imwrite(flow_image_path, flow_vis)
-                
+
                 # Write rounded flow vectors to CSV file
                 for y in range(0, flow.shape[0], 16):
                     for x in range(0, flow.shape[1], 16):
                         dx, dy = flow[y, x]
                         if (abs(dx) > eps and abs(dy) > eps):
                             f.write(f"{frame_count},{x},{y},{round(dx, 2)},{round(dy, 2)}\n")
-                
+
             prev_frame = frame.copy()
             # Increment frame count
             frame_count += 1
@@ -64,11 +64,10 @@ def draw_flow(image, flow, step=16):
         cv2.circle(vis, (x1, y1), 1, (0, 255, 0), -1)
     return vis
 
-for i in range(1, 15):
 
-    video_name= "video" + str(i) + ".mp4"
-    video_path = "Videos/" + video_name
-    output_folder = "output_" + video_name
 
-    # Extract frames from the video, calculate optical flow, and save flow vectors
-    extract_frames_and_optical_flow(video_path, output_folder)
+
+output_folder = "output_webcam"
+
+# Extract frames from the video, calculate optical flow, and save flow vectors
+extract_frames_and_optical_flow(output_folder)
