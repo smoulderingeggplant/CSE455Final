@@ -68,7 +68,7 @@ for i in range(1, 15):
 
     video_name= "video" + str(i) + ".mp4"
     video_path = "Videos/" + video_name
-    output_folder = "output_" + video_name
+    output_folder = "output_video" + str(i)
 
     # Extract frames from the video, calculate optical flow, and save flow vectors
     extract_frames_and_optical_flow(video_path, output_folder)
