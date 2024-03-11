@@ -1,0 +1,5 @@
+# Ignore folders starting with output_
+output_*/
+
+# Ignore folders named Videos
+Videos/
