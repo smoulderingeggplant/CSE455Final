@@ -4,25 +4,25 @@ import torch.optim as optim
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+import torch.nn.functional as F
 
-class Net(nn.Module):
+class SimpleNet(nn.Module):
     def __init__(self, input_size):
-        super(Net, self).__init__()
-        self.fc1 = nn.Linear(input_size, 64)
-        self.fc2 = nn.Linear(64, 32)
-        self.fc3 = nn.Linear(32, 1)
-        self.sigmoid = nn.Sigmoid()
+        super(SimpleNet, self).__init__()
+        self.fc1 = nn.Linear(input_size, 32)
+        self.fc2 = nn.Linear(32, 1)
+        self.dropout = nn.Dropout(0.5)  # Dropout with a probability of 0.5
 
     def forward(self, x):
-        x = torch.relu(self.fc1(x))
-        x = torch.relu(self.fc2(x))
-        x = self.sigmoid(self.fc3(x))
+        x = F.relu(self.fc1(x))
+        x = self.dropout(x)  # Apply dropout after the activation function
+        x = torch.sigmoid(self.fc2(x))
         return x
 
 def train(csv_files, labels):
     X_all = []
     y_all = []
-    # load fiel paths and labels
+    # load file paths and labels
     for csv_file, label in zip(csv_files, labels):
         df = pd.read_csv(csv_file)
         X = df.values 
@@ -39,16 +39,16 @@ def train(csv_files, labels):
     X_test = torch.tensor(X_test).float()
     y_test = torch.tensor(y_test).float().view(-1, 1)
     
-    model = Net(input_size=X_all.shape[1])
+    model = SimpleNet(input_size=X_all.shape[1])
     
     # using BCELoss
     criterion = nn.BCELoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-3)  # L2 regularization (weight decay)
     
     # training
-    for epoch in range(100):
-        print(epoch)
+    for epoch in range(200):
         optimizer.zero_grad()
+        model.train()  # Set the model to training mode
         outputs = model(X_train)
         loss = criterion(outputs, y_train)
         loss.backward()
@@ -59,6 +59,7 @@ def train(csv_files, labels):
 # Evaluate the model
 def test(model, X_test, y_test):
     with torch.no_grad():
+        model.eval()  # Set the model to evaluation mode
         outputs = model(X_test)
         predicted = (outputs > 0.5).float()
         accuracy = (predicted == y_test).sum().item() / len(y_test)

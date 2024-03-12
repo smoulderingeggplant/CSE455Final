@@ -1,0 +1,269 @@
+Testing CSV file: CSVs/L1.csv
+Accuracy: 0.006048414499884468
+
+Testing CSV file: CSVs/L2.csv
+Accuracy: 0.004585791870783967
+
+Testing CSV file: CSVs/L3.csv
+Accuracy: 0.004674762934619864
+
+Testing CSV file: CSVs/L4.csv
+Accuracy: 0.003409437866811412
+
+Testing CSV file: CSVs/L5.csv
+Accuracy: 0.00797778272659392
+
+Testing CSV file: CSVs/L6.csv
+Accuracy: 0.004198516398689611
+
+Testing CSV file: CSVs/L7.csv
+Accuracy: 0.0061837987481945115
+
+Testing CSV file: CSVs/L8.csv
+Accuracy: 0.004712879771160704
+
+Testing CSV file: CSVs/L9.csv
+Accuracy: 0.004947995556901949
+
+Testing CSV file: CSVs/L10.csv
+Accuracy: 0.0070548339237593485
+
+Testing CSV file: CSVs/L11.csv
+Accuracy: 0.008673150709378068
+
+Testing CSV file: CSVs/L12.csv
+Accuracy: 0.008551714013066139
+
+Testing CSV file: CSVs/L13.csv
+Accuracy: 0.006600843905360052
+
+Testing CSV file: CSVs/L14.csv
+Accuracy: 0.007057042853088639
+
+Testing CSV file: CSVs/L15.csv
+Accuracy: 0.006090512258665608
+
+Testing CSV file: CSVs/L16.csv
+Accuracy: 0.9956213250406591
+
+Testing CSV file: CSVs/L17.csv
+Accuracy: 0.9936169840686917
+
+Testing CSV file: CSVs/L18.csv
+Accuracy: 0.9913327330031517
+
+Testing CSV file: CSVs/L19.csv
+Accuracy: 0.9915835879965934
+
+Testing CSV file: CSVs/L20.csv
+Accuracy: 0.9923345338359563
+
+Testing CSV file: CSVs/L21.csv
+Accuracy: 0.9927405517180694
+
+Testing CSV file: CSVs/L22.csv
+Accuracy: 0.9904392808973418
+
+Testing CSV file: CSVs/L23.csv
+Accuracy: 0.9918008069958789
+
+Testing CSV file: CSVs/L24.csv
+Accuracy: 0.9956433117054879
+
+Testing CSV file: CSVs/L25.csv
+Accuracy: 0.9915076335877863
+
+Testing CSV file: CSVs/L26.csv
+Accuracy: 0.9888587617756457
+
+Testing CSV file: CSVs/L27.csv
+Accuracy: 0.9893832371435954
+
+Testing CSV file: CSVs/L28.csv
+Accuracy: 0.9911517696460708
+
+Testing CSV file: CSVs/L29.csv
+Accuracy: 0.9935414763239974
+
+Testing CSV file: CSVs/L30.csv
+Accuracy: 0.9923504537463772
+
+Testing CSV file: CSVs/S1.csv
+Accuracy: 0.0018237944860376822
+
+Testing CSV file: CSVs/S2.csv
+Accuracy: 0.0018885490091767522
+
+Testing CSV file: CSVs/S3.csv
+Accuracy: 0.004374934755582549
+
+Testing CSV file: CSVs/S4.csv
+Accuracy: 0.002483794753740837
+
+Testing CSV file: CSVs/S5.csv
+Accuracy: 0.002511278725504018
+
+Testing CSV file: CSVs/S6.csv
+Accuracy: 0.005716263660188894
+
+Testing CSV file: CSVs/S7.csv
+Accuracy: 0.00920733523379994
+
+Testing CSV file: CSVs/S8.csv
+Accuracy: 0.004733261677937927
+
+Testing CSV file: CSVs/S9.csv
+Accuracy: 0.007533191178072811
+
+Testing CSV file: CSVs/S10.csv
+Accuracy: 0.01898467836033589
+
+Testing CSV file: CSVs/S11.csv
+Accuracy: 0.0055754208041064995
+
+Testing CSV file: CSVs/S12.csv
+Accuracy: 0.021880741606814764
+
+Testing CSV file: CSVs/S13.csv
+Accuracy: 0.007798030997173214
+
+Testing CSV file: CSVs/S14.csv
+Accuracy: 0.016791594727755085
+
+Testing CSV file: CSVs/S15.csv
+Accuracy: 0.02485057296227205
+
+Testing CSV file: CSVs/S16.csv
+Accuracy: 0.9874089458332697
+
+Testing CSV file: CSVs/S17.csv
+Accuracy: 0.9919385432473444
+
+Testing CSV file: CSVs/S18.csv
+Accuracy: 0.9873430150045076
+
+Testing CSV file: CSVs/S19.csv
+Accuracy: 0.9955912408759124
+
+Testing CSV file: CSVs/S20.csv
+Accuracy: 0.9967274613880353
+
+Testing CSV file: CSVs/S21.csv
+Accuracy: 0.9902832418638509
+
+Testing CSV file: CSVs/S22.csv
+Accuracy: 0.9930822444273636
+
+Testing CSV file: CSVs/S23.csv
+Accuracy: 0.9992630901977598
+
+Testing CSV file: CSVs/S24.csv
+Accuracy: 0.9936855727609443
+
+Testing CSV file: CSVs/S25.csv
+Accuracy: 0.996773727012805
+
+Testing CSV file: CSVs/S26.csv
+Accuracy: 0.9958707898420037
+
+Testing CSV file: CSVs/S27.csv
+Accuracy: 0.995411085284321
+
+Testing CSV file: CSVs/S28.csv
+Accuracy: 0.9965845196390121
+
+Testing CSV file: CSVs/S29.csv
+Accuracy: 0.9981389416014512
+
+Testing CSV file: CSVs/S30.csv
+Accuracy: 0.9961143616066621
+
+Testing CSV file: CSVs/P1.csv
+Accuracy: 0.9974966199087375
+
+Testing CSV file: CSVs/P2.csv
+Accuracy: 0.9959138676860029
+
+Testing CSV file: CSVs/P3.csv
+Accuracy: 0.9946799818429415
+
+Testing CSV file: CSVs/P4.csv
+Accuracy: 0.9962596121698428
+
+Testing CSV file: CSVs/P5.csv
+Accuracy: 0.997853693435879
+
+Testing CSV file: CSVs/P6.csv
+Accuracy: 0.9988300541099974
+
+Testing CSV file: CSVs/P7.csv
+Accuracy: 0.9982016236769089
+
+Testing CSV file: CSVs/P8.csv
+Accuracy: 0.9966960522456038
+
+Testing CSV file: CSVs/P9.csv
+Accuracy: 0.9974977631519085
+
+Testing CSV file: CSVs/P10.csv
+Accuracy: 0.99792564395924
+
+Testing CSV file: CSVs/P11.csv
+Accuracy: 0.9976325383923358
+
+Testing CSV file: CSVs/P12.csv
+Accuracy: 0.9935433208271529
+
+Testing CSV file: CSVs/P13.csv
+Accuracy: 0.9973399805935691
+
+Testing CSV file: CSVs/P14.csv
+Accuracy: 0.9958238344059556
+
+Testing CSV file: CSVs/P15.csv
+Accuracy: 0.9946149778754905
+
+Testing CSV file: CSVs/P16.csv
+Accuracy: 0.9980070211365465
+
+Testing CSV file: CSVs/P17.csv
+Accuracy: 0.997809727058295
+
+Testing CSV file: CSVs/P18.csv
+Accuracy: 0.9966259109170913
+
+Testing CSV file: CSVs/P19.csv
+Accuracy: 0.9976141475585991
+
+Testing CSV file: CSVs/P20.csv
+Accuracy: 0.9975793535235876
+
+Testing CSV file: CSVs/P21.csv
+Accuracy: 0.9968640472237594
+
+Testing CSV file: CSVs/P22.csv
+Accuracy: 0.9975314106711158
+
+Testing CSV file: CSVs/P23.csv
+Accuracy: 0.998030448206111
+
+Testing CSV file: CSVs/P24.csv
+Accuracy: 0.9988227312634688
+
+Testing CSV file: CSVs/P25.csv
+Accuracy: 0.9990714948932219
+
+Testing CSV file: CSVs/P26.csv
+Accuracy: 0.9991483431402911
+
+Testing CSV file: CSVs/P27.csv
+Accuracy: 0.9992630803242447
+
+Testing CSV file: CSVs/P28.csv
+Accuracy: 0.9950293934904172
+
+Testing CSV file: CSVs/P29.csv
+Accuracy: 0.9963617340023304
+
+Testing CSV file: CSVs/P30.csv
+Accuracy: 0.9949491356619478
