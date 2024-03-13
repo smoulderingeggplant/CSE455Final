@@ -1,6 +1,3 @@
-import matplotlib.pyplot as plt
-
-csv_files = [
 "L1",
 "L2",
 "L3",
@@ -61,9 +58,7 @@ csv_files = [
 "P28",
 "P29",
 "P30",
-]
 
-accuracies = [
 0.5858399140989221,
 0.5452083952858685,
 0.5406920645483281,
@@ -124,25 +119,3 @@ accuracies = [
 0.369569373416814,
 0.3170522911563979,
 0.21084394489103886,
-
-]
-
-average = 0;
-index = 0;
-for accuracy in accuracies:
-    average += accuracy
-    index += 1
-print(average/index)
-
-
-plt.figure(figsize=(14, 6))
-plt.bar(csv_files, accuracies, color='skyblue')
-plt.xlabel('CSV Files')
-plt.ylabel('Accuracy')
-plt.title('Accuracy of Model on Different CSV Files')
-
-# Increase spacing between ticks
-plt.xticks(range(len(csv_files)), csv_files, rotation=90)
-
-plt.tight_layout()
-plt.show()

@@ -8,15 +8,18 @@ from sklearn.model_selection import train_test_split
 class Net(nn.Module):
     def __init__(self, input_size):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(input_size, 64)
-        self.fc2 = nn.Linear(64, 32)
-        self.fc3 = nn.Linear(32, 1)
+        self.fc1 = nn.Linear(input_size, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, 32)
+        self.fc4 = nn.Linear(32, 1)
+        self.relu = nn.ReLU()
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
-        x = torch.relu(self.fc1(x))
-        x = torch.relu(self.fc2(x))
-        x = self.sigmoid(self.fc3(x))
+        x = self.relu(self.fc1(x))
+        x = self.relu(self.fc2(x))
+        x = self.relu(self.fc3(x))
+        x = self.sigmoid(self.fc4(x))
         return x
 
 def train(csv_files, labels):
@@ -43,7 +46,7 @@ def train(csv_files, labels):
     
     # using BCELoss
     criterion = nn.BCELoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-6)
     
     # training
     for epoch in range(100):
